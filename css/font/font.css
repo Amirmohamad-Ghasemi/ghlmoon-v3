@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'IRANYekan-normal';
+    src: url('iranyekanwebmedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'IRANYekan-bold';
+    src: url('iranyekanwebbold.woff2') format('woff2');
+
+}
+
+* {
+    font-family: 'IRANYekan-normal';
+}
+
+.bold_font {
+    font-family: 'IRANYekan-bold' !important;
+    font-weight: 700;
+}
+
+.main_color {
+    color: #FFA383;
+}
+
+.font_17 {
+    font-size: 17px;
+}
+
+.font_14 {
+    font-size: 14px;
+}
+
+.font_13 {
+    font-size: 13px;
+}
+
+.font_11 {
+    font-size: 11px;
+}
+
+.font_20 {
+    font-size: 20px;
+}
+
+.line_1 {
+    line-clamp: 1;
+    height: 50px;
+}

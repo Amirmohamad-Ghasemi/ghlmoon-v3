@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOXEN | Login</title>
+
+    <link rel="stylesheet" href="../css/font/font.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style/login_NOXEN.css">
+</head>
+
+<body>
+
+    <main class="login-page">
+        <div class="login-container">
+
+            <section class="login-left">
+                <a href="../page/NOXEN.html" class="brand">
+                    <span class="brand-icon">
+                        <i class="bi bi-lightning-charge-fill"></i>
+                    </span>
+                    <span>NOXEN</span>
+                </a>
+
+                <div class="hero-content">
+                    <p class="eyebrow">WELCOME TO NOXEN</p>
+
+                    <h1>
+                        UNLEASH<br>
+                        YOUR <span>POWER.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Your journey to a stronger you starts here.
+                        Sign in and get back to your goals.
+                    </p>
+
+                    <div class="hero-line"></div>
+
+                    <div class="hero-footer">
+                        <i class="bi bi-shield-check"></i>
+                        <span>YOUR FITNESS. YOUR FUTURE.</span>
+                    </div>
+                </div>
+
+                <div class="decor decor-one"></div>
+                <div class="decor decor-two"></div>
+            </section>
+
+            <section class="login-right">
+                <div class="mobile-brand">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                    NOXEN
+                </div>
+
+                <div class="login-form-wrapper">
+
+                    <div class="form-heading">
+                        <p class="eyebrow">YOUR ACCOUNT</p>
+                        <h2>Welcome <span>TO NOXEN</span></h2>
+                        <p>Enter your details to access your account.</p>
+                    </div>
+
+                    <form id="loginForm">
+
+                        <div class="form-group">
+                            <label for="email">EMAIL ADDRESS</label>
+
+                            <div class="input-wrapper">
+                                <i class="bi bi-envelope"></i>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username">USERNAME</label>
+
+                            <div class="input-wrapper">
+                                <i class="bi bi-person"></i>
+                                <input
+                                    type="text"
+                                    id="username"
+                                    name="username"
+                                    placeholder="Enter your username"
+                                    autocomplete="username"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">PASSWORD</label>
+
+                            <div class="input-wrapper">
+                                <i class="bi bi-lock"></i>
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    placeholder="Enter your password"
+                                    autocomplete="current-password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    id="togglePassword"
+                                    aria-label="Show password"
+                                >
+                                    <i class="bi bi-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="login-button">
+                            <span class="matn">LOG IN</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+
+                        <p id="loginMessage" class="login-message"></p>
+
+                    </form>
+
+                    <div class="form-bottom">
+                        <span>POWERED BY</span>
+                        <strong>NOXEN <span>SPORTS</span></strong>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script>
+        const passwordInput = document.getElementById("password");
+        const togglePassword = document.getElementById("togglePassword");
+        const loginForm = document.getElementById("loginForm");
+        const loginMessage = document.getElementById("loginMessage");
+
+        togglePassword.addEventListener("click", function () {
+            const isPassword = passwordInput.type === "password";
+
+            passwordInput.type = isPassword ? "text" : "password";
+
+            this.innerHTML = isPassword
+                ? '<i class="bi bi-eye-slash"></i>'
+                : '<i class="bi bi-eye"></i>';
+
+            this.setAttribute(
+                "aria-label",
+                isPassword ? "Hide password" : "Show password"
+            );
+        });
+
+        loginForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            loginMessage.textContent =
+                "The design is ready. Connect an authentication system to log in.";
+            loginMessage.classList.add("show");
+        });
+    </script>
+
+</body>
+</html>

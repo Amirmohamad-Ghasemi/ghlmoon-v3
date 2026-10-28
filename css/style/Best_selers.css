@@ -1,0 +1,98 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #000;
+    color: #fff;
+}
+
+.shop-container {
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+
+.shop-heading {
+    margin-bottom: 40px;
+}
+
+.shop-heading h1 {
+    font-size: clamp(28px, 4vw, 42px);
+}
+
+.shop-heading p {
+    letter-spacing: 0.5px;
+}
+
+#productGrid {
+    align-items: stretch;
+}
+
+.product-card {
+    overflow: hidden;
+    background: #101010;
+    border: 1px solid #252525;
+    border-radius: 12px;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: #dc3545;
+}
+
+.product-img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    padding: 12px;
+    background: #111;
+}
+
+.product-card h6 {
+    min-height: 40px;
+    line-height: 1.5;
+}
+
+.cart-btn {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #dc3545;
+    border-radius: 9px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.cart-btn:hover {
+    background: #dc3545;
+}
+
+.stars {
+    color: #ffc107;
+    letter-spacing: 2px;
+}
+
+.noxen-navbar svg {
+    width: 22px;
+    height: 22px;
+}
+
+@media (max-width: 575px) {
+    .shop-container {
+        padding-top: 125px;
+    }
+
+    .product-img {
+        height: 190px;
+    }
+
+    .shop-heading {
+        margin-bottom: 25px;
+    }
+}

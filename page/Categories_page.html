@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOXEN | Categories</title>
+
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style/categories_page.css">
+    <link rel="stylesheet" href="../css/style/NOXEN.css">
+</head>
+
+<body>
+
+         <nav class="noxen-navbar navbar navbar-expand-lg position-fixed top-0 start-0 end-0 mx-3 mx-lg-5 mt-3 rounded-4 z-3" data-bs-theme="dark">
+
+    <div class="container-fluid px-3 px-lg-4">
+
+        <!-- Logo -->
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <img src="../asset/file_000000004f0481f59ceed42ac92e72b3(1).png" alt="" width="135" class="img-fluid">
+        </a>
+
+        <!-- Mobile Button -->
+        <button class="navbar-toggler border-0 shadow-none" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#noxenMenu"
+                aria-controls="noxenMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="fs-3 text-white">☰</span>
+
+        </button>
+
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="noxenMenu">
+
+            <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active text-white px-3" href="./NOXEN.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 px-3" href="../page/cart.html">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 px-3" href="./Categories_page.html">Categories</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 px-3" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 px-3" href="#">Contact</a>
+                </li>
+
+            </ul>
+
+
+            <!-- Icons -->
+            <div class="d-flex align-items-center justify-content-center gap-2 mt-3 mt-lg-0">
+
+                <!-- Search -->
+                <a href="#" class="noxen-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M20 20L16.5 16.5"></path>
+                    </svg>
+
+                </a>
+
+
+                <!-- User -->
+                <a href="./login_NOXEN.html" class="noxen-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="12" cy="8" r="4"></circle>
+                        <path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path>
+                    </svg>
+
+                </a>
+
+
+                <!-- Heart -->
+                <a href="#" class="noxen-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M20.8 8.8c0 5.4-8.8 10.2-8.8 10.2S3.2 14.2 3.2 8.8A4.8 4.8 0 0 1 12 6.1a4.8 4.8 0 0 1 8.8 2.7Z"></path>
+                    </svg>
+
+                </a>
+
+
+                <!-- Cart -->
+<!-- Cart -->
+<!-- Cart -->
+<div class="cart-wrapper position-relative">
+    <button
+        type="button"
+        id="cartButton"
+        class="noxen-icon rounded-circle d-flex align-items-center justify-content-center text-white position-relative"
+        aria-label="Shopping Cart"
+        aria-expanded="false"
+    >
+        <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+        >
+            <path d="M3 4h2l2.2 11h10.9l2-8H6"></path>
+            <circle cx="10" cy="19" r="1.2"></circle>
+            <circle cx="17" cy="19" r="1.2"></circle>
+        </svg>
+
+        <span
+            id="cartCount"
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        >0</span>
+    </button>
+
+    <div id="cartDropdown" class="cart-dropdown">
+        <h6 class="fw-bold mb-3">Your Shopping Cart</h6>
+
+        <div id="cartPreview">
+            <p class="text-secondary small">Your cart is empty.</p>
+        </div>
+
+        <div class="d-flex justify-content-between mt-3 mb-3">
+            <span>Total:</span>
+            <strong id="cartPreviewTotal">$0.00</strong>
+        </div>
+
+        <a href="cart.html" class="cart-view-btn">
+            View Cart →
+        </a>
+    </div>
+</div>
+</nav>
+
+    <main class="nxcat-v2-page">
+
+        <!-- HERO -->
+        <section class="nxcat-v2-hero">
+            <div class="container">
+                <span class="nxcat-v2-eyebrow">
+                    FIND YOUR EQUIPMENT
+                </span>
+
+                <h1>
+                    SHOP BY <span>CATEGORY</span>
+                </h1>
+
+                <p>
+                    Discover the right equipment for your training.
+                </p>
+
+                <div class="nxcat-v2-search">
+                    <i class="bi bi-search"></i>
+
+                    <input
+                        type="search"
+                        id="nxcat-v2-search"
+                        placeholder="Search equipment..."
+                        aria-label="Search equipment">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CATEGORY SECTION -->
+        <section class="nxcat-v2-section container">
+
+            <div class="nxcat-v2-heading">
+                <div>
+                    <span class="nxcat-v2-eyebrow">
+                        EXPLORE NOXEN
+                    </span>
+
+                    <h2>OUR CATEGORIES</h2>
+                </div>
+
+                <span id="nxcat-v2-count">
+                    5 CATEGORIES
+                </span>
+            </div>
+
+
+            <!-- CATEGORY GRID -->
+            <div class="row g-4" id="nxcat-v2-grid">
+
+
+                <!-- CARD 1 -->
+                <div class="col-12 col-sm-6 col-lg-4 nxcat-v2-item"
+                     data-search="dumbbells weights strength">
+
+                    <a href="../page/sabad.html?category=dumbbells"
+                       class="nxcat-v2-card">
+
+                        <div class="nxcat-v2-image">
+                            <img
+                                src="../asset/file_00000000a35081f4a258f315ae048e94.png"
+                                alt="Dumbbells and free weights"
+                                loading="lazy">
+
+                            <span class="nxcat-v2-number">01</span>
+                        </div>
+
+                        <div class="nxcat-v2-info">
+                            <div>
+                                <span class="nxcat-v2-tag">STRENGTH</span>
+                                <h3>Dumbbells</h3>
+                                <p>Build your strength, one rep at a time.</p>
+                            </div>
+
+                            <span class="nxcat-v2-arrow">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </span>
+                        </div>
+
+                    </a>
+                </div>
+
+
+                <!-- CARD 2 -->
+                <div class="col-12 col-sm-6 col-lg-4 nxcat-v2-item"
+                     data-search="barbells weights lifting">
+
+                    <a href="../page/sabad.html?category=barbells"
+                       class="nxcat-v2-card">
+
+                        <div class="nxcat-v2-image">
+                            <img
+                                src="../asset/file_00000000ace081f48b37eb4fd9bfbad8.png"
+                                alt="Barbells for weight training"
+                                loading="lazy">
+
+                            <span class="nxcat-v2-number">02</span>
+                        </div>
+
+                        <div class="nxcat-v2-info">
+                            <div>
+                                <span class="nxcat-v2-tag">WEIGHT TRAINING</span>
+                                <h3>Barbells</h3>
+                                <p>Take your lifting sessions further.</p>
+                            </div>
+
+                            <span class="nxcat-v2-arrow">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </span>
+                        </div>
+
+                    </a>
+                </div>
+
+
+                <!-- CARD 3 -->
+                <div class="col-12 col-sm-6 col-lg-4 nxcat-v2-item"
+                     data-search="treadmills cardio running">
+
+                    <a href="../page/sabad.html?category=cardio"
+                       class="nxcat-v2-card">
+
+                        <div class="nxcat-v2-image">
+                            <img
+                                src="../asset/file_0000000089d48243ace9d6d8cd059b8f.png"
+                                alt="Cardio training equipment"
+                                loading="lazy">
+
+                            <span class="nxcat-v2-number">03</span>
+                        </div>
+
+                        <div class="nxcat-v2-info">
+                            <div>
+                                <span class="nxcat-v2-tag">CARDIO</span>
+                                <h3>Treadmills</h3>
+                                <p>Keep moving towards your next goal.</p>
+                            </div>
+
+                            <span class="nxcat-v2-arrow">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </span>
+                        </div>
+
+                    </a>
+                </div>
+
+
+                <!-- CARD 4 -->
+                <div class="col-12 col-sm-6 col-lg-4 nxcat-v2-item"
+                     data-search="strength machines gym equipment">
+
+                    <a href="../page/sabad.html?category=machines"
+                       class="nxcat-v2-card">
+
+                        <div class="nxcat-v2-image">
+                            <img
+                                src="../asset/file_000000007d3c81f4a9261bf1d254a120.png"
+                                alt="Strength training machines"
+                                loading="lazy">
+
+                            <span class="nxcat-v2-number">04</span>
+                        </div>
+
+                        <div class="nxcat-v2-info">
+                            <div>
+                                <span class="nxcat-v2-tag">PERFORMANCE</span>
+                                <h3>Strength Machines</h3>
+                                <p>Build a stronger training routine.</p>
+                            </div>
+
+                            <span class="nxcat-v2-arrow">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </span>
+                        </div>
+
+                    </a>
+                </div>
+
+
+                <!-- CARD 5 -->
+                <div class="col-12 col-sm-6 col-lg-4 nxcat-v2-item"
+                     data-search="accessories gym fitness equipment">
+
+                    <a href="../page/sabad.html?category=accessories"
+                       class="nxcat-v2-card">
+
+                        <div class="nxcat-v2-image">
+                            <img
+                                src="../asset/simkesh.png"
+                                alt="Fitness accessories"
+                                loading="lazy">
+
+                            <span class="nxcat-v2-number">05</span>
+                        </div>
+
+                        <div class="nxcat-v2-info">
+                            <div>
+                                <span class="nxcat-v2-tag">ESSENTIALS</span>
+                                <h3>Accessories</h3>
+                                <p>Complete your workout setup.</p>
+                            </div>
+
+                            <span class="nxcat-v2-arrow">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </span>
+                        </div>
+
+                    </a>
+                </div>
+
+
+            </div>
+
+
+            <!-- NO RESULTS -->
+            <div class="nxcat-v2-empty" id="nxcat-v2-empty" hidden>
+                <i class="bi bi-search"></i>
+                <h3>No equipment found</h3>
+                <p>Try searching for another category.</p>
+            </div>
+
+        </section>
+
+
+        <!-- BOTTOM BANNER -->
+        <section class="container nxcat-v2-banner">
+            <div>
+                <span class="nxcat-v2-eyebrow">BUILT FOR YOUR NEXT LEVEL</span>
+                <h2>YOUR TRAINING.<br>YOUR RULES.</h2>
+                <p>Find the equipment that fits your goals.</p>
+            </div>
+
+            <a href="../page/sabad.html" class="nxcat-v2-button">
+                EXPLORE SHOP
+                <i class="bi bi-arrow-up-right"></i>
+            </a>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="nxcat-v2-footer">
+            <a href="../page/NOXEN.html">NOXEN</a>
+            <p>BUILT FOR YOUR NEXT LEVEL.</p>
+        </footer>
+
+    </main>
+
+
+    <script src="../js/bootrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/categories.js"></script>
+
+</body>
+</html>

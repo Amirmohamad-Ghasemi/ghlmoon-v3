@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOXEN - Shop All</title>
+
+    <link href="../css/font/font.css" rel="stylesheet">
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap/bootstrap-icons.css" rel="stylesheet">
+    <link href="../css/style/NOXEN.css" rel="stylesheet">
+    <link href="../css/style/cart.css" rel="stylesheet">
+
+    <script src="../js/bootrap/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="noxen-navbar navbar navbar-expand-lg position-fixed top-0 start-0 end-0 mx-3 mx-lg-5 mt-3 rounded-4 z-3"
+     data-bs-theme="dark">
+
+    <div class="container-fluid px-3 px-lg-4">
+
+        <a href="NOXEN.html" class="navbar-brand">
+            <img src="../asset/file_000000004f0481f59ceed42ac92e72b3(1).png"
+                 alt="NOXEN"
+                 width="135"
+                 class="img-fluid">
+        </a>
+
+        <button class="navbar-toggler border-0 shadow-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#noxenMenu"
+                aria-controls="noxenMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="fs-3 text-white">☰</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="noxenMenu">
+
+            <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 px-3" href="NOXEN.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active text-white px-3" href="shop.html">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 px-3" href="#products">Categories</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 px-3" href="NOXEN.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 px-3" href="NOXEN.html">Contact</a>
+                </li>
+
+            </ul>
+
+            <div class="d-flex align-items-center justify-content-center gap-2 mt-3 mt-lg-0">
+
+                <!-- Search -->
+                <a href="#products"
+                   class="noxen-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M20 20L16.5 16.5"></path>
+                    </svg>
+                </a>
+
+                <!-- User -->
+                <a href="#"
+                   class="noxen-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8">
+                        <circle cx="12" cy="8" r="4"></circle>
+                        <path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path>
+                    </svg>
+                </a>
+
+                <!-- Heart -->
+                <a href="#"
+                   class="noxen-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8">
+                        <path d="M20.8 8.8c0 5.4-8.8 10.2-8.8 10.2S3.2 14.2 3.2 8.8A4.8 4.8 0 0 1 12 6.1a4.8 4.8 0 0 1 8.8 2.7Z"></path>
+                    </svg>
+                </a>
+
+                <!-- Cart -->
+                <a href="cart.html"
+                   class="noxen-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none position-relative">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8">
+                        <path d="M3 4h2l2.2 11h10.9l2-8H6"></path>
+                        <circle cx="10" cy="19" r="1.2"></circle>
+                        <circle cx="17" cy="19" r="1.2"></circle>
+                    </svg>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- PRODUCTS -->
+<main class="container shop-container" id="products">
+
+    <div class="shop-heading">
+        <p class="text-danger mb-2">━━ OUR COLLECTION</p>
+        <h1 class="text-white fw-bold">Shop All Products</h1>
+        <p class="text-secondary">Discover our premium fitness equipment.</p>
+    </div>
+
+    <div class="row g-4" id="productGrid"></div>
+
+</main>
+
+<!-- GENERATE 20 CARDS -->
+<script>
+const products = [
+    { name: "Adjustable Bench", price: 299, image: "../asset/sandali1.png", rating: "4.8", badge: "Sale" },
+    { name: "Hex Dumbbell Set", price: 199, image: "../asset/download.png", rating: "4.9", badge: "Hot" },
+    { name: "Treadmill Pro 500", price: 1299, image: "../asset/file_00000000a35081f4a258f315ae048e94.png", rating: "4.7" },
+    { name: "Home Gym Station", price: 899, image: "../asset/file_0000000089d48243ace9d6d8cd059b8f.png", rating: "4.6", badge: "Sale" },
+    { name: "Workout Bench Pro", price: 249, image: "../asset/sandali1.png", rating: "4.7" },
+    { name: "Premium Dumbbells", price: 149, image: "../asset/download.png", rating: "4.8" },
+    { name: "Running Treadmill X", price: 1499, image: "../asset/file_00000000a35081f4a258f315ae048e94.png", rating: "4.6" },
+    { name: "Strength Machine", price: 799, image: "../asset/file_0000000089d48243ace9d6d8cd059b8f.png", rating: "4.7" },
+    { name: "Training Bench Elite", price: 329, image: "../asset/sandali1.png", rating: "4.8" },
+    { name: "Complete Weight Set", price: 219, image: "../asset/download.png", rating: "4.9" },
+    { name: "Cardio Treadmill S", price: 1099, image: "../asset/file_00000000a35081f4a258f315ae048e94.png", rating: "4.6" },
+    { name: "Multi Gym Station", price: 949, image: "../asset/file_0000000089d48243ace9d6d8cd059b8f.png", rating: "4.8" },
+    { name: "Compact Fitness Bench", price: 189, image: "../asset/sandali1.png", rating: "4.5" },
+    { name: "Dumbbell Pair Pro", price: 129, image: "../asset/download.png", rating: "4.7" },
+    { name: "Home Treadmill Pro", price: 1199, image: "../asset/file_00000000a35081f4a258f315ae048e94.png", rating: "4.8" },
+    { name: "Cable Training Machine", price: 879, image: "../asset/file_0000000089d48243ace9d6d8cd059b8f.png", rating: "4.6" },
+    { name: "Flat Weight Bench", price: 159, image: "../asset/sandali1.png", rating: "4.7" },
+    { name: "Fitness Weight Pair", price: 99, image: "../asset/download.png", rating: "4.8" },
+    { name: "Professional Treadmill", price: 1699, image: "../asset/file_00000000a35081f4a258f315ae048e94.png", rating: "4.9", badge: "Hot" },
+    { name: "Premium Home Gym", price: 999, image: "../asset/file_0000000089d48243ace9d6d8cd059b8f.png", rating: "4.8" }
+];
+
+const productGrid = document.getElementById("productGrid");
+
+products.forEach(function(product) {
+    const card = document.createElement("div");
+    card.className = "col-12 col-sm-6 col-lg-3";
+
+    card.innerHTML = `
+        <div class="product-card h-100">
+            <div class="position-relative">
+                ${product.badge ? `<span class="badge bg-danger position-absolute top-0 start-0 m-3">${product.badge}</span>` : ""}
+                <img src="${product.image}"
+                     class="w-100 product-img"
+                     alt="${product.name}">
+            </div>
+
+            <div class="p-3">
+                <h6 class="text-white">${product.name}</h6>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-white fw-bold">$${product.price.toLocaleString("en-US")}</span>
+                    <button class="cart-btn" type="button" aria-label="Add ${product.name} to cart">🛒</button>
+                </div>
+
+                <div class="mt-2">
+                    <span class="stars">★★★★★</span>
+                    <small class="text-secondary ms-1">(${product.rating})</small>
+                </div>
+            </div>
+        </div>
+    `;
+
+    productGrid.appendChild(card);
+});
+</script>
+
+</body>
+</html>

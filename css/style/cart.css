@@ -1,0 +1,205 @@
+
+        body {
+            background: #000;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .cart-section {
+            padding-top: 140px;
+            padding-bottom: 70px;
+        }
+
+        .cart-box,
+        .summary-box {
+            background: #111;
+            border: 1px solid #292929;
+            border-radius: 18px;
+            padding: 24px;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 20px 0;
+            border-bottom: 1px solid #292929;
+        }
+
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+
+        .cart-item img {
+            width: 105px;
+            height: 105px;
+            object-fit: contain;
+            background: #1b1b1b;
+            border-radius: 12px;
+            padding: 8px;
+            flex-shrink: 0;
+        }
+
+        .item-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .item-info h5 {
+            font-size: 16px;
+            overflow-wrap: anywhere;
+        }
+
+        .item-price {
+            color: #ff3030;
+            font-weight: bold;
+        }
+
+        .quantity-control {
+            display: inline-flex;
+            align-items: center;
+            border: 1px solid #393939;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .quantity-control button {
+            width: 34px;
+            height: 34px;
+            background: #1c1c1c;
+            color: #fff;
+            border: none;
+            font-size: 19px;
+        }
+
+        .quantity-control button:hover {
+            background: #ff3030;
+        }
+
+        .quantity-number {
+            min-width: 36px;
+            text-align: center;
+        }
+
+        .remove-btn {
+            color: #aaa;
+            background: none;
+            border: none;
+            font-size: 13px;
+        }
+
+        .remove-btn:hover {
+            color: #ff3030;
+        }
+
+        .summary-line {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .checkout-btn,
+        .continue-btn {
+            display: block;
+            width: 100%;
+            padding: 13px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .checkout-btn {
+            background: #ff3030;
+            color: #fff;
+            border: none;
+        }
+
+        .checkout-btn:hover {
+            background: #d91f1f;
+            color: #fff;
+        }
+
+        .continue-btn {
+            color: #fff;
+            border: 1px solid #444;
+            margin-top: 12px;
+        }
+
+        .continue-btn:hover {
+            background: #222;
+            color: #fff;
+        }
+
+        .empty-cart {
+            text-align: center;
+            padding: 55px 10px;
+        }
+
+        .empty-cart i {
+            font-size: 55px;
+            color: #ff3030;
+        }
+
+        @media (max-width: 576px) {
+            .cart-section {
+                padding-top: 115px;
+            }
+
+            .cart-box,
+            .summary-box {
+                padding: 16px;
+            }
+
+            .cart-item {
+                gap: 12px;
+                align-items: flex-start;
+            }
+
+            .cart-item img {
+                width: 78px;
+                height: 85px;
+            }
+
+            .item-info h5 {
+                font-size: 14px;
+            }
+
+            .item-price {
+                font-size: 14px;
+            }
+        }
+
+        
+/* Scroll only the product cards section */
+#cartPageItems {
+    max-height: 380px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 8px;
+}
+
+/* Custom scrollbar */
+#cartPageItems::-webkit-scrollbar {
+    width: 6px;
+}
+
+#cartPageItems::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 10px;
+}
+
+#cartPageItems::-webkit-scrollbar-thumb {
+    background: #ff3030;
+    border-radius: 10px;
+}
+
+#cartPageItems::-webkit-scrollbar-thumb:hover {
+    background: #d91f1f;
+}
+
+/* Keep the summary box at the top */
+.summary-box {
+    align-self: flex-start;
+}

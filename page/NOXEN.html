@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="../css/font/font.css" rel="stylesheet">
+    <link href="../css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style/NOXEN.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons.css">
+    <script src="../js/bootrap/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+      <nav class="noxen-navbar navbar navbar-expand-lg position-fixed top-0 start-0 end-0 mx-3 mx-lg-5 mt-3 rounded-4 z-3" data-bs-theme="dark">
+
+    <div class="container-fluid px-3 px-lg-4">
+
+        <!-- Logo -->
+        <a href="#" class="navbar-brand d-flex align-items-center">
+            <img src="../asset/file_000000004f0481f59ceed42ac92e72b3(1).png" alt="" width="135" class="img-fluid">
+        </a>
+
+        <!-- Mobile Button -->
+        <button class="navbar-toggler border-0 shadow-none" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#noxenMenu"
+                aria-controls="noxenMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="fs-3 text-white">☰</span>
+
+        </button>
+
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="noxenMenu">
+
+            <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active text-white px-3" href="./NOXEN.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 px-3" href="../page/cart.html">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 px-3" href="./Categories_page.html">Categories</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 px-3" href="#">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-white-50 px-3" href="#">Contact</a>
+                </li>
+
+            </ul>
+
+
+            <!-- Icons -->
+            <div class="d-flex align-items-center justify-content-center gap-2 mt-3 mt-lg-0">
+
+                <!-- Search -->
+                <a href="#" class="noxen-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M20 20L16.5 16.5"></path>
+                    </svg>
+
+                </a>
+
+
+                <!-- User -->
+                <a href="./login_NOXEN.html" class="noxen-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="12" cy="8" r="4"></circle>
+                        <path d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"></path>
+                    </svg>
+
+                </a>
+
+
+                <!-- Heart -->
+                <a href="#" class="noxen-icon rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M20.8 8.8c0 5.4-8.8 10.2-8.8 10.2S3.2 14.2 3.2 8.8A4.8 4.8 0 0 1 12 6.1a4.8 4.8 0 0 1 8.8 2.7Z"></path>
+                    </svg>
+
+                </a>
+
+
+                <!-- Cart -->
+<!-- Cart -->
+<!-- Cart -->
+<div class="cart-wrapper position-relative">
+    <button
+        type="button"
+        id="cartButton"
+        class="noxen-icon rounded-circle d-flex align-items-center justify-content-center text-white position-relative"
+        aria-label="Shopping Cart"
+        aria-expanded="false"
+    >
+        <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+        >
+            <path d="M3 4h2l2.2 11h10.9l2-8H6"></path>
+            <circle cx="10" cy="19" r="1.2"></circle>
+            <circle cx="17" cy="19" r="1.2"></circle>
+        </svg>
+
+        <span
+            id="cartCount"
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        >0</span>
+    </button>
+
+    <div id="cartDropdown" class="cart-dropdown">
+        <h6 class="fw-bold mb-3">Your Shopping Cart</h6>
+
+        <div id="cartPreview">
+            <p class="text-secondary small">Your cart is empty.</p>
+        </div>
+
+        <div class="d-flex justify-content-between mt-3 mb-3">
+            <span>Total:</span>
+            <strong id="cartPreviewTotal">$0.00</strong>
+        </div>
+
+        <a href="cart.html" class="cart-view-btn">
+            View Cart →
+        </a>
+    </div>
+</div>
+</nav>
+
+<section class="noxen-hero position-relative overflow-hidden">
+
+    <img src="../asset/file_000000001c8081f5ac817de4da36ae00.png"
+         alt="NOXEN Sports"
+         class="noxen-hero-image position-absolute">
+
+    <!-- Dark Fade -->
+    <div class="noxen-hero_fade position-absolute top-0 start-0 h-100"></div>
+
+    <div class="matn_aks container-fluid position-relative z-1 h-100 px-3 px-lg-5">
+        <div class="row align-items-end h-100">
+            
+            <div class="col-12 col-lg-5 pb-5">
+                
+                <div class="text-white">
+                    <span class="mb-5">
+                        TRAIN HARDER • LIVE BETTER
+                    </span>
+
+                    <h1 class="NOXEN_aks display-5 fw-bold ">
+                        NOXEN
+                    </h1>
+
+                    <h2 class="NOXEN1_aks h3 fw-bold mb-3">
+                        SPORTS <span class="text-danger">EQUIPMENT</span>
+                    </h2>
+
+                    <p class="small mb-4">
+                        Professional equipment for<br>
+                        stronger body, focused mind.
+                    </p>
+
+                    <a href="#" class="dokme_aks btn btn-danger btn-sm rounded-pill px-3">
+                        Shop Now →
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="container my-5">
+  <div class="d-flex justify-content-between align-items-end mb-3">    
+    <div>      
+        <small class="text-danger">━━ SHOP BY CATEGORY</small>      
+        <h2 class="text-white fw-bold mt-2">        Explore Our Categories      </h2>    
+    </div>
+    <a href="./Categories.html" class="text-white text-decoration-none">      View All →    </a>  
+</div>
+  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+    <div class="col">      
+        <div class="category-card">        
+            <img src="../asset/file_00000000a35081f4a258f315ae048e94.png" class="w-100" alt="">        
+            <div class="d-flex justify-content-between align-items-center">          
+                <span>Dumbbells</span>         
+                 <a href="#" class="category-arrow">→</a>       
+                </div>     
+             </div>   
+             </div>
+    <div class="col">      
+        <div class="category-card">        
+            <img src="../asset/file_00000000ace081f48b37eb4fd9bfbad8.png" class="w-100" alt="">        
+            <div class="d-flex justify-content-between align-items-center">         
+                 <span>Barbells</span>          
+                 <a href="#" class="category-arrow">→</a>        
+                </div>      
+            </div>    
+        </div>
+    <div class="col">      
+        <div class="category-card">        
+            <img src="../asset/file_000000007d3c81f4a9261bf1d254a120.png" class="w-100" alt="">       
+             <div class="d-flex justify-content-between align-items-center">         
+                 <span>Treadmills</span>         
+                  <a href="#" class="category-arrow">→</a>       
+                 </div>      
+                </div>    
+            </div>
+    <div class="col">      
+        <div class="category-card">        
+            <img src="../asset/sandali1.png" class="w-100" alt="Strength Machines">       
+             <div class="d-flex justify-content-between align-items-center">          
+                <span>Strength Machines</span>          
+                <a href="#" class="category-arrow">→</a>       
+             </div>     
+             </div>   
+             </div>
+    <div class="col">      
+        <div class="category-card">        
+            <img src="../asset/file_0000000089d48243ace9d6d8cd059b8f.png" class="w-100" alt="">        
+            <div class="d-flex justify-content-between align-items-center">          
+                <span>Accessories</span>          
+                <a href="#" class="category-arrow">→</a>       
+             </div>     
+             </div>  
+             </div>
+  </div>
+</section>
+
+<section class="container py-5">
+  <!-- Section Title -->  
+   <div class="mb-4">   
+     <small class="text-secondary fw-bold text-danger">      
+        <span class="text-danger">━━</span> FEATURED PRODUCTS </small>
+    <h2 class="text-white fw-bold mt-2"> Best Sellers </h2>  
+</div>
+  
+<div class="row g-4">
+    <!-- Product 1 -->
+    <div class="col-12 col-sm-6 col-lg-3" data-product="bench">
+        <div class="product-card h-100 p-3">
+            <span class="badge bg-danger rounded-pill">Sale</span>
+
+            <img src="../asset/simkesh.png"
+                 class="product-img"
+                 alt="Adjustable Bench">
+
+            <h6 class="text-white mt-3">Adjustable Bench</h6>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="text-white fw-bold">$299</span>
+                    <small class="old-price ms-2">$399</small>
+                </div>
+                <button type="button" class="cart-btn">🛒</button>
+            </div>
+
+            <div class="stars mt-2">
+                ★★★★★ <small class="text-secondary">(4.8)</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-12 col-sm-6 col-lg-3" data-product="dumbbell">
+        <div class="product-card h-100 p-3">
+            <span class="badge bg-danger rounded-pill">Hot</span>
+
+            <img src="../asset/sandali1.png"
+                 class="product-img"
+                 alt="Hex Dumbbell Set">
+
+            <h6 class="text-white mt-3">Hex Dumbbell Set (Pair)</h6>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="text-white fw-bold">$199</span>
+                    <small class="old-price ms-2">$249</small>
+                </div>
+                <button type="button" class="cart-btn">🛒</button>
+            </div>
+
+            <div class="stars mt-2">
+                ★★★★★ <small class="text-secondary">(4.9)</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-12 col-sm-6 col-lg-3" data-product="treadmill">
+        <div class="product-card h-100 p-3">
+            <span class="badge bg-danger rounded-pill">Sale</span>
+
+            <img src="../asset/download.png"
+                 class="product-img"
+                 alt="Treadmill Pro 500">
+
+            <h6 class="text-white mt-3">Treadmill Pro 500</h6>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="text-white fw-bold">$1,299</span>
+                    <small class="old-price ms-2">$1,599</small>
+                </div>
+                <button type="button" class="cart-btn">🛒</button>
+            </div>
+
+            <div class="stars mt-2">
+                ★★★★★ <small class="text-secondary">(4.7)</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-12 col-sm-6 col-lg-3" data-product="gym">
+        <div class="product-card h-100 p-3">
+            <span class="badge bg-danger rounded-pill">Sale</span>
+
+            <img src="../asset/file_00000000a35081f4a258f315ae048e94.png"
+                 class="product-img"
+                 alt="Home Gym Station">
+
+            <h6 class="text-white mt-3">Home Gym Station</h6>
+
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <span class="text-white fw-bold">$899</span>
+                    <small class="old-price ms-2">$1,199</small>
+                </div>
+                <button type="button" class="cart-btn">🛒</button>
+            </div>
+
+            <div class="stars mt-2">
+                ★★★★★ <small class="text-secondary">(4.6)</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+
+<section class="container my-5 modern-section">
+    <div class="modern-box position-relative overflow-hidden">
+
+        <!-- Your Original Image -->
+        <div class="modern-image">
+            <img
+                src="../asset/file_00000000596881f4a9e91f88adb232c9.png"
+                alt="Fitness Equipment"
+                class="img-fluid"
+            >
+        </div>
+
+        <!-- Text and Button -->
+        <div class="modern-content">
+            <span class="modern-label">OUR COLLECTION</span>
+
+            <h2 class="modern-title mt-3">
+                Modern Just<br>
+                Equipment
+            </h2>
+
+            <p class="modern-text mt-3">
+                Discover premium fitness equipment designed
+                to help you reach your goals.
+            </p>
+
+            <a href="#" class="learn-btn">
+                Learn More
+                <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="container py-5">
+  <div class="d-flex justify-content-between align-items-end mb-4">
+    <div>
+      <p class="section-label mb-2" style="color: #dc3545;">
+        FEATURED PRODUCTS
+      </p>
+      <h2 class="text-white fw-bold mb-0">
+        OTHER SPORTS CATEGORIES
+      </h2>
+    </div>
+    <div class="d-flex gap-2">
+      <button class="slider-btn">←</button>
+      <button class="slider-btn">→</button>
+    </div>
+  </div>
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="product-card h-100">
+        <div class="position-relative">
+
+          <img src="../asset/file_00000000115081f5bc78de6ace8e52c2.png"
+               class="w-100 product-img"
+               alt="Adjustable Bench">
+        </div>
+        <div class="p-3">
+          <h6 class="text-white">PROFESSIONAL WRESTLING</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit natus neque iusto maxime cumque</span>
+
+            </div>
+            <button class="cart-btn">→</button>
+          </div>
+          <div class="mt-2">
+            <span class="stars">★★★★★</span>
+            <small class="text-secondary ms-1">(4.8)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="product-card h-100">
+        <div class="position-relative">
+
+          <img src="../asset/file_00000000840881f58c0edbb28f151f55.png"
+               class="w-100 product-img"
+               alt="Dumbbell Set">
+        </div>
+        <div class="p-3">
+          <h6 class="text-white">CALISTENICS</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit natus neque iusto maxime cumque</span>
+            </div>
+            <button class="cart-btn">→</button>
+          </div>
+          <div class="mt-2">
+            <span class="stars">★★★★★</span>
+            <small class="text-secondary ms-1">(4.9)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="product-card h-100">
+        <div class="position-relative">
+
+            <img src="../asset/file_00000000dd4081f5a469e57ab08a50d7.png"
+               alt="Treadmill">
+        </div>
+        <div class="p-3">
+          <h6 class="text-white">BOX</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit natus neque iusto maxime cumque</span>
+            </div>
+            <button class="cart-btn">→</button>
+          </div>
+          <div class="mt-2">
+            <span class="stars">★★★★★</span>
+            <small class="text-secondary ms-1">(4.7)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="product-card h-100">
+        <div class="position-relative">
+
+          <img src="../asset/file_00000000ed4481f594751dbba6c402eb.png"
+               class="w-100 product-img"
+               alt="Home Gym Station">
+        </div>
+        <div class="p-3">
+          <h6 class="text-white">VOLLIBALL</h6>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit natus neque iusto maxime cumque</span>
+
+            </div>
+            <button class="cart-btn">→</button>
+          </div>
+          <div class="mt-2">
+            <span class="stars">★★★★★</span>
+            <small class="text-seconda
+ry ms-1">(4.6)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+```html
+<!-- CUSTOMER REVIEWS -->
+<section class="container py-5">
+
+    <div class="text-center mb-5">
+        <small class="text-danger fw-bold">━━ CUSTOMER REVIEWS ━━</small>
+        <h2 class="text-white fw-bold mt-3">What Our Customers Say</h2>
+        <p class="text-secondary">Feedback from our fitness community</p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="h-100 p-4 rounded-4 border border-secondary bg-dark">
+                <div class="text-danger fs-5 mb-3">★★★★★</div>
+                <p class="text-white-50">
+                    "Great quality and modern design. The equipment is
+                    perfect for my home gym."
+                </p>
+                <div class="d-flex align-items-center gap-3 mt-4">
+                    <div class="rounded-circle bg-danger text-white fw-bold d-flex align-items-center justify-content-center"
+                         style="width:45px;height:45px;">J</div>
+                    <div>
+                        <h6 class="text-white mb-1">James Wilson</h6>
+                        <small class="text-secondary">Fitness Enthusiast</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="h-100 p-4 rounded-4 border border-secondary bg-dark">
+                <div class="text-danger fs-5 mb-3">★★★★★</div>
+                <p class="text-white-50">
+                    "I love the quality and professional look. NOXEN makes
+                    working out at home much better."
+                </p>
+                <div class="d-flex align-items-center gap-3 mt-4">
+                    <div class="rounded-circle bg-danger text-white fw-bold d-flex align-items-center justify-content-center"
+                         style="width:45px;height:45px;">S</div>
+                    <div>
+                        <h6 class="text-white mb-1">Sophia Miller</h6>
+                        <small class="text-secondary">Home Gym Owner</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="h-100 p-4 rounded-4 border border-secondary bg-dark">
+                <div class="text-danger fs-5 mb-3">★★★★★</div>
+                <p class="text-white-50">
+                    "A great selection of fitness equipment with a clean
+                    and easy shopping experience."
+                </p>
+                <div class="d-flex align-items-center gap-3 mt-4">
+                    <div class="rounded-circle bg-danger text-white fw-bold d-flex align-items-center justify-content-center"
+                         style="width:45px;height:45px;">A</div>
+                    <div>
+                        <h6 class="text-white mb-1">Alex Morgan</h6>
+                        <small class="text-secondary">Sports Enthusiast</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT NOXEN -->
+<section class="container py-5">
+    <div class="row align-items-center g-5">
+
+        <div class="col-12 col-lg-6">
+            <img src="../asset/file_00000000596881f4a9e91f88adb232c9.png"
+                 alt="NOXEN Fitness Equipment"
+                 class="img-fluid w-100 rounded-4">
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <small class="text-danger fw-bold">━━ ABOUT NOXEN ━━</small>
+
+            <h2 class="text-white fw-bold display-6 mt-3">
+                More Than Equipment.
+                <span class="text-danger">A Stronger Lifestyle.</span>
+            </h2>
+
+            <p class="text-secondary mt-4">
+                At NOXEN, we believe that every great achievement starts
+                with dedication, consistency, and the right equipment.
+                Our mission is to help fitness enthusiasts build their
+                ideal training space.
+            </p>
+
+            <p class="text-secondary">
+                From strength training to cardio, discover equipment
+                designed to support your fitness journey and help you
+                train with confidence.
+            </p>
+
+            <a href="./Categories_page.html"
+               class="btn btn-danger rounded-pill px-4 py-2 mt-2">
+                Explore Categories →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- NOXEN FOOTER -->
+<footer class="bg-dark border-top border-secondary mt-4">
+
+    <div class="container py-5">
+        <div class="row g-4">
+
+            <!-- Brand -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="./NOXEN.html" class="d-inline-block mb-3">
+                    <img src="../asset/file_000000004f0481f59ceed42ac92e72b3(1).png"
+                         alt="NOXEN Logo"
+                         style="width:140px;max-width:100%;">
+                </a>
+
+                <p class="text-secondary">
+                    Equip your ambition. Train with purpose.
+                    Build a stronger version of yourself with NOXEN.
+                </p>
+
+                <div class="d-flex gap-3 mt-4">
+                    <a href="#" class="text-white fs-5" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white fs-5" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#" class="text-white fs-5" aria-label="YouTube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                    <a href="#" class="text-white fs-5" aria-label="TikTok">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-6 col-md-3 col-lg-2">
+                <h6 class="text-white fw-bold mb-4">QUICK LINKS</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="./NOXEN.html" class="text-secondary text-decoration-none">Home</a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="../page/cart.html" class="text-secondary text-decoration-none">Shop</a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="./Categories_page.html" class="text-secondary text-decoration-none">Categories</a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="./login_NOXEN.html" class="text-secondary text-decoration-none">My Account</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Categories -->
+            <div class="col-6 col-md-3 col-lg-3">
+                <h6 class="text-white fw-bold mb-4">CATEGORIES</h6>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="./Categories_page.html" class="text-secondary text-decoration-none">Strength Training</a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="./Categories_page.html" class="text-secondary text-decoration-none">Cardio Equipment</a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="./Categories_page.html" class="text-secondary text-decoration-none">Accessories</a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="./Categories_page.html" class="text-secondary text-decoration-none">All Products</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-12 col-lg-3">
+                <h6 class="text-white fw-bold mb-4">GET IN TOUCH</h6>
+
+                <p class="text-secondary">
+                    <i class="bi bi-envelope text-danger me-2"></i>
+                    support@noxen.com
+                </p>
+
+                <p class="text-secondary">
+                    <i class="bi bi-geo-alt text-danger me-2"></i>
+                    Your Fitness Journey Starts Here
+                </p>
+
+                <a href="mailto:support@noxen.com"
+                   class="btn btn-outline-danger rounded-pill px-4 mt-2">
+                    Contact Us →
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-top border-secondary">
+        <div class="container py-3">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                <small class="text-secondary text-center">
+                    © 2026 NOXEN. All rights reserved.
+                </small>
+
+                <small class="text-secondary">
+                    Designed for strength. Built for progress.
+                </small>
+            </div>
+        </div>
+    </div>
+
+</footer>
+```
+<script src="../js/noxen.js"></script>
+</body>
+</html>

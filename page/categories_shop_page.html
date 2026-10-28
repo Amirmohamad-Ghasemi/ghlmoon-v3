@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOXEN | Product Details</title>
+
+    <link rel="stylesheet" href="../css/font/font.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style/categories_shop_page.css">
+
+    <script src="../js/bootrap/bootstrap.bundle.min.js" defer></script>
+    <script src="../js/categories_shop_page.js" defer></script>
+</head>
+
+<body class="bg-black text-white">
+
+    <main class="container py-5" id="cpProductPage">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="../page/NOXEN.html"
+                       class="text-secondary text-decoration-none">
+                        Home
+                    </a>
+                </li>
+
+                <li class="breadcrumb-item">
+                    <a href="../page/sabad.html"
+                       class="text-secondary text-decoration-none">
+                        Shop
+                    </a>
+                </li>
+
+                <li class="breadcrumb-item active text-white"
+                    aria-current="page">
+                    Product Details
+                </li>
+            </ol>
+        </nav>
+
+        <!-- Product Details -->
+        <section class="row g-5 align-items-start">
+
+            <!-- Product Image -->
+            <div class="col-12 col-lg-6">
+                <div class="product-image-box position-relative rounded-4 overflow-hidden">
+
+                    <img
+                        id="cpProductImage"
+                        src="../asset/download.png"
+                        alt="Selected NOXEN product"
+                        class="img-fluid w-100"
+                    >
+
+                    <span class="product-image-badge">
+                        NOXEN EQUIPMENT
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- Product Information -->
+            <div class="col-12 col-lg-6">
+
+                <p class="text-danger small fw-bold mb-2"
+                   id="cpProductCategory">
+                    SPORTS EQUIPMENT
+                </p>
+
+                <h1 id="cpProductTitle"
+                    class="fw-bold mb-3">
+                    Adjustable Dumbbells
+                </h1>
+
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <span class="text-warning">★★★★★</span>
+                    <span class="text-secondary small">
+                        Premium Quality
+                    </span>
+                </div>
+
+                <h2 id="cpProductPrice"
+                    class="fw-bold mb-4">
+                    $120.00
+                </h2>
+
+                <p id="cpProductDescription"
+                   class="text-secondary mb-4">
+                    Upgrade your training space with NOXEN premium
+                    sports equipment, designed for your workout routine.
+                </p>
+
+                <hr class="border-secondary">
+
+                <!-- Color Selection -->
+                <div class="mb-4">
+                    <label class="d-block fw-semibold mb-3"
+                           for="cpProductColor">
+                        Color:
+                        <span id="cpSelectedColor">Black</span>
+                    </label>
+
+                    <div class="d-flex align-items-center gap-3">
+
+                        <button
+                            type="button"
+                            class="cp-color-option active"
+                            data-color="Black"
+                            aria-label="Black color"
+                            aria-pressed="true"
+                            style="background:#171717;">
+                        </button>
+
+                        <button
+                            type="button"
+                            class="cp-color-option"
+                            data-color="Red"
+                            aria-label="Red color"
+                            aria-pressed="false"
+                            style="background:#dc3545;">
+                        </button>
+
+                        <button
+                            type="button"
+                            class="cp-color-option"
+                            data-color="Silver"
+                            aria-label="Silver color"
+                            aria-pressed="false"
+                            style="background:#bfc3c7;">
+                        </button>
+
+                    </div>
+
+                    <input
+                        type="hidden"
+                        id="cpProductColor"
+                        value="Black"
+                    >
+                </div>
+
+                <!-- Quantity -->
+                <div class="mb-4">
+                    <label for="cpProductQuantity"
+                           class="d-block fw-semibold mb-3">
+                        Quantity
+                    </label>
+
+                    <div class="d-flex align-items-center gap-3">
+
+                        <button
+                            type="button"
+                            id="cpQuantityMinus"
+                            class="cp-quantity-btn"
+                            aria-label="Decrease quantity">
+                            −
+                        </button>
+
+                        <input
+                            type="number"
+                            id="cpProductQuantity"
+                            class="cp-quantity-input"
+                            value="1"
+                            min="1"
+                            max="99"
+                            inputmode="numeric"
+                            aria-label="Product quantity"
+                        >
+
+                        <button
+                            type="button"
+                            id="cpQuantityPlus"
+                            class="cp-quantity-btn"
+                            aria-label="Increase quantity">
+                            +
+                        </button>
+
+                    </div>
+                </div>
+
+                <!-- Add to Cart -->
+                <button
+                    type="button"
+                    id="cpAddToCart"
+                    class="btn btn-danger w-100 py-3 fw-bold rounded-3">
+                    <i class="bi bi-cart-plus me-2"></i>
+                    ADD TO CART
+                </button>
+
+                <p id="cpCartMessage"
+                   class="small mt-3 mb-0"
+                   aria-live="polite">
+                </p>
+
+                <!-- Product Benefits -->
+                <div class="row g-3 mt-4">
+
+                    <div class="col-6">
+                        <div class="cp-benefit">
+                            <i class="bi bi-truck fs-4 text-danger"></i>
+                            <span>Reliable Delivery</span>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="cp-benefit">
+                            <i class="bi bi-shield-check fs-4 text-danger"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="cp-benefit">
+                            <i class="bi bi-arrow-repeat fs-4 text-danger"></i>
+                            <span>Easy Returns</span>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="cp-benefit">
+                            <i class="bi bi-headset fs-4 text-danger"></i>
+                            <span>Customer Support</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Product Information -->
+        <section class="mt-5 pt-4 border-top border-secondary">
+            <h3 class="fw-bold mb-3">Product Details</h3>
+
+            <p class="text-secondary">
+                Discover your next training essential with NOXEN.
+                Explore quality equipment made to support your fitness goals.
+            </p>
+        </section>
+
+        <!-- Back to Shop -->
+        <div class="text-center mt-5">
+            <a href="../page/sabad.html"
+               class="btn btn-outline-light rounded-pill px-4 py-2">
+                <i class="bi bi-arrow-left me-2"></i>
+                Back to Shop
+            </a>
+        </div>
+
+    </main>
+
+</body>
+</html>

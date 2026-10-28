@@ -1,0 +1,357 @@
+
+/* =========================
+   NOXEN PRODUCT PAGE
+========================= */
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    background: #050505;
+    color: #fff;
+}
+
+.product-page {
+    padding-top: 125px;
+    padding-bottom: 70px;
+}
+
+/* Breadcrumb */
+
+.product-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    color: #777;
+    font-size: 13px;
+}
+
+.product-breadcrumb a {
+    color: #999;
+    text-decoration: none;
+    transition: color .25s;
+}
+
+.product-breadcrumb a:hover {
+    color: #ff3045;
+}
+
+/* Product Image */
+
+.product-image-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 430px;
+    padding: 25px;
+    overflow: hidden;
+    border: 1px solid #292929;
+    border-radius: 22px;
+    background:
+        radial-gradient(ellipse at center, #202020 0%, #101010 55%, #080808 100%);
+    box-shadow: 0 18px 45px #0008;
+}
+
+.product-image-wrapper img {
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    transition: transform .35s ease;
+}
+
+.product-image-wrapper:hover img {
+    transform: scale(1.04);
+}
+
+.product-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding: 8px 12px;
+    border: 1px solid #ffffff22;
+    border-radius: 30px;
+    background: #0008;
+    color: #ff4355;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+/* Product Information */
+
+.product-information {
+    padding-top: 10px;
+}
+
+.product-category,
+.section-label {
+    color: #ff3045;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.product-information h1 {
+    margin: 12px 0;
+    font-size: clamp(30px, 4vw, 45px);
+    font-weight: 800;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 18px 0;
+}
+
+.product-rating span {
+    color: #ffb547;
+    letter-spacing: 3px;
+}
+
+.product-rating small {
+    color: #999;
+}
+
+.product-price {
+    margin: 18px 0;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.product-description {
+    max-width: 540px;
+    color: #a3a3a3;
+    line-height: 1.9;
+}
+
+.product-information hr {
+    margin: 25px 0;
+    border-color: #ffffff25;
+}
+
+/* Color Options */
+
+.product-option {
+    margin: 25px 0;
+}
+
+.option-title {
+    margin-bottom: 14px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#cpSelectedColor {
+    margin-left: 5px;
+    color: #aaa;
+    font-weight: 400;
+}
+
+.color-options {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cp-color-option {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: 3px solid #111;
+    outline: 1px solid #555;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform .2s, outline-color .2s;
+}
+
+.cp-color-option:hover {
+    transform: scale(1.1);
+}
+
+.cp-color-option.active {
+    outline: 2px solid #ff3045;
+    outline-offset: 3px;
+}
+
+/* Quantity */
+
+.quantity-control {
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid #383838;
+    border-radius: 10px;
+    background: #111;
+}
+
+.quantity-control button {
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.quantity-control button:hover {
+    background: #292929;
+}
+
+.quantity-control input {
+    width: 55px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Hide number input arrows */
+
+.quantity-control input::-webkit-inner-spin-button,
+.quantity-control input::-webkit-outer-spin-button {
+    margin: 0;
+    appearance: none;
+}
+
+/* Add To Cart */
+
+.add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ff3045;
+    border-radius: 10px;
+    background: #ff3045;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: background .25s, transform .25s, box-shadow .25s;
+}
+
+.add-to-cart i {
+    margin-right: 8px;
+    font-size: 17px;
+}
+
+.add-to-cart:hover {
+    transform: translateY(-2px);
+    background: #d91d32;
+    box-shadow: 0 8px 25px #ff304533;
+}
+
+.cart-message {
+    min-height: 20px;
+    margin-top: 12px;
+    color: #65d995;
+    font-size: 13px;
+}
+
+/* Benefits */
+
+.product-benefits {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.product-benefits > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #bdbdbd;
+    font-size: 12px;
+}
+
+.product-benefits i {
+    color: #ff3045;
+    font-size: 21px;
+}
+
+/* Details */
+
+.product-details {
+    margin-top: 75px;
+    padding: 30px 0;
+    border-top: 1px solid #292929;
+}
+
+.product-details h2 {
+    margin: 15px 0;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.product-details > p:last-child {
+    max-width: 700px;
+    color: #999;
+    line-height: 1.9;
+}
+
+/* Back to Shop */
+
+.back-to-shop {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.back-to-shop a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    border: 1px solid #414141;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: background .25s, border-color .25s;
+}
+
+.back-to-shop a:hover {
+    border-color: #ff3045;
+    background: #ff3045;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .product-page {
+        padding-top: 100px;
+    }
+
+    .product-image-wrapper {
+        min-height: 300px;
+        padding: 18px;
+    }
+
+    .product-information h1 {
+        font-size: 30px;
+    }
+
+    .product-price {
+        font-size: 27px;
+    }
+
+    .product-benefits {
+        gap: 15px 8px;
+    }
+
+    .product-benefits > div {
+        font-size: 11px;
+    }
+}
